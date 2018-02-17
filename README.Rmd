@@ -1,0 +1,95 @@
+```{r, echo=FALSE, include=FALSE}
+## Get VERSION and create file names
+ver <- sub(x=grep(x=readLines("DESCRIPTION"), pattern="^Version: ",
+                  value=TRUE),
+           pattern="^Version: ", replacement="")
+pkg.name <- "legtheme_"
+pkg.source <- paste0(pkg.name, ver, ".tar.gz")
+pkg.win <- paste0(pkg.name, ver, ".zip")
+```
+
+# legtheme `r ver`
+
+[![Build Status](https://travis-ci.org/wbonat/mcglm.svg?branch=master)](https://travis-ci.org/wbonat/mcglm)
+
+LEG template for documents.
+
+## Introduction
+
+Some description.
+
+## Download and install
+
+### Linux/Mac
+
+Use the `devtools` package (available from
+[CRAN](http://cran-r.c3sl.ufpr.br/web/packages/devtools/index.html)) to
+install automatically from this GitHub repository:
+
+```{r, eval=FALSE}
+library(devtools)
+install_github("leg-ufpr/legtheme")
+```
+
+Alternatively, download the package tarball: [`r pkg.source`][]
+and run from a UNIX terminal (make sure you are on the container file
+directory):
+
+```{r, echo=FALSE, comment=NA}
+cmd <- paste("R CMD INSTALL -l /path/to/your/R/library", pkg.source)
+cat(cmd, sep = "\n")
+```
+
+Or, inside an `R` session:
+
+```{r, echo=FALSE, comment=NA}
+inst <- paste0("install.packages(", "\"", pkg.source, "\"", ", repos = NULL,\n",
+               "                 lib.loc = \"/path/to/your/R/library\",\n",
+               "                 dependencies = TRUE)")
+cat(inst, sep = "\n")
+```
+
+Note that `-l /path/to/your/R/library` in the former and `lib.loc =
+"/path/to/your/R/library"` in the latter are optional. Only use it if
+you want to install in a personal library, other than the standard R
+library.
+
+### Windows
+
+Download Windows binary version: [`r pkg.win`][] (**do not unzip
+it under Windows**), put the file in your working directory, and from
+inside `R`:
+
+```{r, echo=FALSE, comment=NA}
+instw <- paste0("install.packages(", "\"", pkg.win, "\"", ", repos = NULL,\n",
+                "                 dependencies = TRUE)")
+cat(instw, sep = "\n")
+```
+
+## Authors
+
+- [Fernando de Pol Mayer][]
+
+## Documentation
+
+The reference manual in PDF can be found here: [legtheme-manual.pdf][]
+
+## License
+
+See [LICENSE](./LICENSE)
+
+<!-- links -->
+
+```{r, echo=FALSE, include=FALSE}
+pkg.source.link <- paste0(
+    "https://github.com/leg-ufpr/legtheme/raw/master/downloads/",
+    pkg.source)
+pkg.win.link <- paste0(
+    "https://github.com/leg-ufpr/legtheme/raw/master/downloads/",
+    pkg.win)
+```
+
+[`r pkg.source`]: `r pkg.source.link`
+[`r pkg.win`]: `r pkg.win.link`
+[legtheme-manual.pdf]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme-manual.pdf
+[Fernando de Pol Mayer]: http://www.leg.ufpr.br/~fernandomayer

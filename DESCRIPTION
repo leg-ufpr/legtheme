@@ -1,0 +1,19 @@
+Package: legtheme
+Type: Package
+Title: 'R' 'Markdown' Themes for LEG documents
+Version: 0.0.1
+Authors@R: c(
+  person("Fernando", "Mayer" , , "fernando.mayer@ufpr.br", c("aut", "cre"))
+  )
+Description: A set of custom 'R' 'Markdown' templates for documents and
+   presentations with the LEG color scheme and identity standards.
+URL: https://github.com/leg-ufpr/leg-themes
+BugReports: https://github.com/leg-ufpr/leg-themes/issues
+Depends:
+    R (>= 3.0)
+License: MIT + file LICENSE
+Imports:
+    rmarkdown (>= 1.1.0)
+RoxygenNote: 6.0.1
+Roxygen: list(markdown = TRUE)
+Encoding: UTF-8
