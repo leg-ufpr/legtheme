@@ -33,7 +33,8 @@ beamer_leg <- function(toc = FALSE,
                        md_extensions = NULL,
                        pandoc_args = NULL){
     template <- find_resource("beamer_leg", "template.tex")
-    load_resources_if_missing("beamer_leg", "leg.pdf")
+    ## Precisa ver como remover do diretório do usuário depois de copiar
+    load_resources_if_missing("beamer_leg", c("leg.pdf", "ufpr.pdf", "dest.pdf"))
     rmarkdown::beamer_presentation(template = template,
                                    toc = toc,
                                    slide_level = slide_level,
