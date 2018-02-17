@@ -2,7 +2,7 @@
 
 # legtheme 0.0.1
 
-[![Build Status](https://travis-ci.org/wbonat/mcglm.svg?branch=master)](https://travis-ci.org/wbonat/mcglm)
+[![Build Status](https://travis-ci.org/leg-ufpr/legtheme.svg?branch=master)](https://travis-ci.org/leg-ufpr/legtheme)
 
 LEG template for documents.
 

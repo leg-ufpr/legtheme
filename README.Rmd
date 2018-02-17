@@ -10,7 +10,7 @@ pkg.win <- paste0(pkg.name, ver, ".zip")
 
 # legtheme `r ver`
 
-[![Build Status](https://travis-ci.org/wbonat/mcglm.svg?branch=master)](https://travis-ci.org/wbonat/mcglm)
+[![Build Status](https://travis-ci.org/leg-ufpr/legtheme.svg?branch=master)](https://travis-ci.org/leg-ufpr/legtheme)
 
 LEG template for documents.
 
