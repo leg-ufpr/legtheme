@@ -1,21 +1,26 @@
 ---
-title: '"Illinois" UIUC Beamer Theme'
-short-title: "Beamer Slides"
-author: "John and Mary Doe"
-short-author: "J & M Doe"
-date: '`r format(Sys.Date(), "%B %d, %Y")`'      # Month DD, YYYY (Main Slide)
-short-date: '`r format(Sys.Date(), "%m/%d/%Y")`' # MM/DD/YYYY (Lower Right)
-institute: "University of Illinois at Urbana-Champaign"
-short-institute: "UIUC"
-department: "Department of Magic"                # Institute must be defined
-license: "Did you license this slide deck? "
-section-titles: false                            # Provides slide headings
-safe-columns: true                               # Enables special latex macros for columns.
+title: "Introdução à análise exploratória de dados"
+short-title: "Análise exploratória"
+author: |
+  | Wagner H. Bonat
+  | Elias T. Krainski
+  | Fernando P. Mayer
+short-author: "WB, EK, FM"
+date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+short-date: "2018/1"
+institute: "Laboratório de Estatística e Geoinformação"
+short-institute: "LEG/DEST/UFPR"
+department: |
+  | Universidade Federal do Paraná
+  | Departamento de Estatística
+safe-columns: true
 output:
-   legtheme::beamer_leg
+  legtheme::beamer_leg
 ---
 
+
 # Section title
+
 ## Subsection title
 
 ### Frame Title
@@ -51,10 +56,11 @@ Hello Equation \ref{eq:binom}
 
 ### Redux \LaTeX
 
-This theme supports special LaTeX macros `\beingcols` and `\endcols` that allows
-for markdown to be blended with LaTeX without triggering the [`raw_tex`](http://pandoc.org/MANUAL.html#raw-tex)
-extension. To enable this feature, the `safe-columns` key in the YML head matter
-must be set equal to `true`.
+This theme supports special LaTeX macros `\beingcols` and `\endcols`
+that allows for markdown to be blended with LaTeX without triggering the
+[`raw_tex`](http://pandoc.org/MANUAL.html#raw-tex) extension. To enable
+this feature, the `safe-columns` key in the YML head matter must be set
+equal to `true`.
 
 \begincols
 
