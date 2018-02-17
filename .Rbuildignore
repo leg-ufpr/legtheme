@@ -10,4 +10,5 @@ Rplots.pdf
 ^downloads$
 ^playground$
 ^data-raw$
+^auto$
 buildPkg.R
