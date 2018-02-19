@@ -23,12 +23,15 @@ inherit_pdf_document <- function(...) {
 }
 
 load_resources_if_missing <- function(template_name, resources) {
-    for (template_file in resources)
-        if (!file.exists(template_file)){
+    if(!dir.exists("logo")){
+        dir.create("logo")
+    }
+    for(template_file in resources)
+        if(!file.exists(paste0("logo/", template_file))){
             file.copy(system.file("rmarkdown", "templates",
                                   template_name,
                                   "skeleton",
                                   template_file,
-                                  package = "legtheme"), ".")
+                                  package = "legtheme"), "logo/")
         }
 }
