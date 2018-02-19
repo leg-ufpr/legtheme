@@ -61,8 +61,8 @@ install.packages("legtheme_0.1.0.zip", repos = NULL,
 
 ## Authors
 
-- Original [theme](https://github.com/coatless/uiucthemes) by [James L.
-  Balamuta](@coatless)
+- Original [theme](https://github.com/coatless/uiucthemes)
+  (`uiucthemes`) by [James L. Balamuta](https://github.com/coatless)
 - LEG theme adaptation by:
   - [Fernando de Pol Mayer][]
 
