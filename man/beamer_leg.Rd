@@ -2,7 +2,7 @@
 % Please edit documentation in R/beamer_templates.R
 \name{beamer_leg}
 \alias{beamer_leg}
-\title{"LEG" Themed Beamer Presentation Template for RMarkdown}
+\title{LEG Themed Beamer Presentation Template for Rmarkdown}
 \usage{
 beamer_leg(toc = FALSE, slide_level = 3, incremental = FALSE,
   fig_width = 10, fig_height = 7, fig_crop = TRUE, fig_caption = TRUE,
@@ -72,11 +72,11 @@ additional details.}
 \item{pandoc_args}{Additional command line options to pass to pandoc}
 }
 \value{
-A modified \code{beamer_presentation} based on the "LEG"
+A modified \code{beamer_presentation} based on the LEG
 Beamer themed template.
 }
 \description{
-Generates from an RMarkdown file a Beamer presentation with "LEG"
+Generates from an RMarkdown file a Beamer presentation with LEG
 colors and identity standards.
 }
 \examples{
@@ -89,5 +89,5 @@ rmarkdown::render("slide_deck/slide_deck.Rmd")
 }
 }
 \author{
-Fernando Mayer
+James Balamuta (original theme), Fernando Mayer (LEG theme adaptation)
 }

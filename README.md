@@ -1,6 +1,6 @@
 
 
-# legtheme 0.0.1
+# legtheme 0.1.0
 
 [![Build Status](https://travis-ci.org/leg-ufpr/legtheme.svg?branch=master)](https://travis-ci.org/leg-ufpr/legtheme)
 
@@ -24,20 +24,20 @@ library(devtools)
 install_github("leg-ufpr/legtheme")
 ```
 
-Alternatively, download the package tarball: [legtheme_0.0.1.tar.gz][]
+Alternatively, download the package tarball: [legtheme_0.1.0.tar.gz][]
 and run from a UNIX terminal (make sure you are on the container file
 directory):
 
 
 ```
-R CMD INSTALL -l /path/to/your/R/library legtheme_0.0.1.tar.gz
+R CMD INSTALL -l /path/to/your/R/library legtheme_0.1.0.tar.gz
 ```
 
 Or, inside an `R` session:
 
 
 ```
-install.packages("legtheme_0.0.1.tar.gz", repos = NULL,
+install.packages("legtheme_0.1.0.tar.gz", repos = NULL,
                  lib.loc = "/path/to/your/R/library",
                  dependencies = TRUE)
 ```
@@ -49,19 +49,22 @@ library.
 
 ### Windows
 
-Download Windows binary version: [legtheme_0.0.1.zip][] (**do not unzip
+Download Windows binary version: [legtheme_0.1.0.zip][] (**do not unzip
 it under Windows**), put the file in your working directory, and from
 inside `R`:
 
 
 ```
-install.packages("legtheme_0.0.1.zip", repos = NULL,
+install.packages("legtheme_0.1.0.zip", repos = NULL,
                  dependencies = TRUE)
 ```
 
 ## Authors
 
-- [Fernando de Pol Mayer][]
+- Original [theme](https://github.com/coatless/uiucthemes) by [James L.
+  Balamuta](@coatless)
+- LEG theme adaptation by:
+  - [Fernando de Pol Mayer][]
 
 ## Documentation
 
@@ -69,13 +72,13 @@ The reference manual in PDF can be found here: [legtheme-manual.pdf][]
 
 ## License
 
-See [LICENSE](./LICENSE)
+MIT. See [LICENSE](./LICENSE)
 
 <!-- links -->
 
 
 
-[legtheme_0.0.1.tar.gz]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.0.1.tar.gz
-[legtheme_0.0.1.zip]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.0.1.zip
+[legtheme_0.1.0.tar.gz]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.1.0.tar.gz
+[legtheme_0.1.0.zip]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.1.0.zip
 [legtheme-manual.pdf]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme-manual.pdf
 [Fernando de Pol Mayer]: http://www.leg.ufpr.br/~fernandomayer

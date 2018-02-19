@@ -1,11 +1,12 @@
 Package: legtheme
 Type: Package
-Title: 'R' 'Markdown' Themes for LEG documents
-Version: 0.0.1
+Title: Rmarkdown Theme for LEG documents
+Version: 0.1.0
 Authors@R: c(
-  person("Fernando", "Mayer" , , "fernando.mayer@ufpr.br", c("aut", "cre"))
+  person("Fernando", "Mayer", email = "fernando.mayer@ufpr.br", role = c("aut", "cre")),
+  person("James", "Balamuta", role = c("aut"))
   )
-Description: A set of custom 'R' 'Markdown' templates for documents and
+Description: A set of custom Rmarkdown templates for documents and
    presentations with the LEG color scheme and identity standards.
 URL: https://github.com/leg-ufpr/leg-themes
 BugReports: https://github.com/leg-ufpr/leg-themes/issues

@@ -4,9 +4,9 @@
 \name{legtheme-package}
 \alias{legtheme}
 \alias{legtheme-package}
-\title{legtheme: 'R' 'Markdown' Themes for LEG documents}
+\title{legtheme: Rmarkdown Theme for LEG documents}
 \description{
-A set of custom 'R' 'Markdown' templates for documents and
+A set of custom Rmarkdown templates for documents and
 presentations with the LEG color scheme and identity standards.
 }
 \details{
@@ -22,5 +22,10 @@ Useful links:
 }
 \author{
 \strong{Maintainer}: Fernando Mayer \email{fernando.mayer@ufpr.br}
+
+Authors:
+\itemize{
+  \item James Balamuta
+}
 
 }

@@ -68,7 +68,10 @@ cat(instw, sep = "\n")
 
 ## Authors
 
-- [Fernando de Pol Mayer][]
+- Original [theme](https://github.com/coatless/uiucthemes) by [James L.
+  Balamuta](@coatless)
+- LEG theme adaptation by:
+  - [Fernando de Pol Mayer][]
 
 ## Documentation
 
@@ -76,7 +79,7 @@ The reference manual in PDF can be found here: [legtheme-manual.pdf][]
 
 ## License
 
-See [LICENSE](./LICENSE)
+MIT. See [LICENSE](./LICENSE)
 
 <!-- links -->
 

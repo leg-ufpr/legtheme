@@ -1,11 +1,11 @@
-#' "LEG" Themed Beamer Presentation Template for RMarkdown
+#' LEG Themed Beamer Presentation Template for Rmarkdown
 #'
-#' Generates from an RMarkdown file a Beamer presentation with "LEG"
+#' Generates from an RMarkdown file a Beamer presentation with LEG
 #' colors and identity standards.
 #' @inheritParams rmarkdown::beamer_presentation
-#' @return A modified \code{beamer_presentation} based on the "LEG"
+#' @return A modified \code{beamer_presentation} based on the LEG
 #'  Beamer themed template.
-#' @author Fernando Mayer
+#' @author James Balamuta (original theme), Fernando Mayer (LEG theme adaptation)
 #' @examples
 #' \dontrun{
 #' # Generate slide deck from beamer template
