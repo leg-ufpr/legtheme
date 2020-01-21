@@ -7,7 +7,7 @@
 \title{legtheme: Rmarkdown Theme for LEG documents}
 \description{
 A set of custom Rmarkdown templates for documents and
-presentations with the LEG color scheme and identity standards.
+   presentations with the LEG color scheme and identity standards.
 }
 \details{
 Trial run on RMarkdown templates
