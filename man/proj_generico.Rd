@@ -2,7 +2,7 @@
 % Please edit documentation in R/proj_generico_templates.R
 \name{proj_generico}
 \alias{proj_generico}
-\title{LEG Themed Beamer Presentation Template for Rmarkdown}
+\title{LEG Themed Generic Project Template for Rmarkdown}
 \usage{
 proj_generico(
   toc = TRUE,
@@ -20,9 +20,9 @@ proj_generico(
   latex_engine = "pdflatex",
   citation_package = c("none", "natbib", "biblatex"),
   includes = NULL,
-  md_extensions = NULL,
+  md_extensions = "-auto_identifiers",
   output_extensions = NULL,
-  pandoc_args = rmarkdown_format("-auto_identifiers"),
+  pandoc_args = NULL,
   extra_dependencies = NULL
 )
 }
@@ -91,22 +91,21 @@ c("unicode=true", "breaklinks=true"), lmodern = NULL)}). It can be used to
 add custom LaTeX packages to the .tex header.}
 }
 \value{
-A modified \code{beamer_presentation} based on the LEG
-Beamer themed template.
+A PDF document based on the LEG themed template.
 }
 \description{
-Generates from an RMarkdown file a Beamer presentation with LEG
+Generates from an RMarkdown file a PDF document with LEG
 colors and identity standards.
 }
 \examples{
 \dontrun{
 # Generate slide deck from beamer template
-rmarkdown::draft("slide_deck.Rmd", template = "beamer_leg", package = "legtheme")
+rmarkdown::draft("proj.Rmd", template = "proj_generico", package = "legtheme")
 
 # Compile the document
-rmarkdown::render("slide_deck/slide_deck.Rmd")
+rmarkdown::render("proj/proj.Rmd")
 }
 }
 \author{
-James Balamuta (original theme), Fernando Mayer (LEG theme adaptation)
+Fernando Mayer
 }
