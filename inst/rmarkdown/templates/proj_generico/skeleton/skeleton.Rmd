@@ -1,0 +1,36 @@
+---
+title: MEMORIAL DESCRITIVO
+university: UNIVERSIDADE FEDERAL DO PARANÁ
+sector: SETOR DE CIÊNCIAS EXATAS
+department: DEPARTAMENTO DE ESTATÍSTICA
+author: Fernando de Pol Mayer
+city: Curitiba
+year: 2020
+font-size: 11pt
+output: legtheme::proj_generico
+---
+
+# Introdução
+
+Alguma coisa aqui.
+
+Metodologia
+
+Mais outra coisa.
+
+# Metodo
+
+Alguma coisa
+
+```{r}
+x <- rnorm(10)
+x
+```
+
+## Dados
+
+Mais algo.
+
+### Um dado
+
+Alguma coisa aqui.
