@@ -1,2 +1,3 @@
 auto/
 *.tar.gz
+inst/rmarkdown/templates/proj_generico/skeleton/skeleton.pdf
