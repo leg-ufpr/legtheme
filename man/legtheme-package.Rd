@@ -15,8 +15,8 @@ Trial run on RMarkdown templates
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/leg-ufpr/leg-themes}
-  \item Report bugs at \url{https://github.com/leg-ufpr/leg-themes/issues}
+  \item \url{https://github.com/leg-ufpr/legtheme}
+  \item Report bugs at \url{https://github.com/leg-ufpr/legtheme/issues}
 }
 
 }

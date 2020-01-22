@@ -20,7 +20,7 @@ proj_generico(
   latex_engine = "pdflatex",
   citation_package = c("none", "natbib", "biblatex"),
   includes = NULL,
-  md_extensions = "-auto_identifiers",
+  md_extensions = NULL,
   output_extensions = NULL,
   pandoc_args = NULL,
   extra_dependencies = NULL

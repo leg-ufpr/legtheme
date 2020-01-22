@@ -13,6 +13,7 @@
 #' # Compile the document
 #' rmarkdown::render("proj/proj.Rmd")
 #' }
+#' @import bookdown
 #' @export
 proj_generico <-
     function(toc = TRUE,
