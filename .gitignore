@@ -1,3 +1,5 @@
 auto/
 *.tar.gz
 inst/rmarkdown/templates/proj_generico/skeleton/skeleton.pdf
+inst/rmarkdown/templates/proj_generico/skeleton/bib/
+inst/rmarkdown/templates/proj_generico/skeleton/logo/
