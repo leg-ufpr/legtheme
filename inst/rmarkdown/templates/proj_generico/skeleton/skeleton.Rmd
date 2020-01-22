@@ -7,8 +7,8 @@ author: Fernando de Pol Mayer
 city: Curitiba
 year: 2020
 font-size: 11pt
-bibliography: ref.bib
-csl: abntex2.csl
+bibliography: bib/ref.bib
+csl: bib/abntex2.csl
 output: legtheme::proj_generico
 ---
 
@@ -112,7 +112,7 @@ aparência com as opções do chunk. Veja um exemplo na Figura
 \@ref(fig:leg).
 
 ```{r leg, fig.cap="O logo do LEG.", out.width="50%"}
-knitr::include_graphics("leg.pdf")
+knitr::include_graphics("logo/leg.pdf")
 ```
 
 # Referências
