@@ -35,7 +35,8 @@ proj_generico <-
              ## \hypertarget ao definir ections e etc. Ver:
              ## https://github.com/pzhaonet/bookdownplus/issues/45
              ## https://martinhjelm.github.io/2018/05/30/Removing-Hypertarget-For-Pandoc-Markdown-to-Latex/
-             md_extensions = "-auto_identifiers",
+             ## md_extensions = "-auto_identifiers",
+             md_extensions = NULL,
              output_extensions = NULL,
              pandoc_args = NULL,
              extra_dependencies = NULL)
@@ -43,25 +44,25 @@ proj_generico <-
         template <- find_resource("proj_generico", "template.tex")
         ## load_resources_if_missing("beamer_leg",
         ##                           c("leg.pdf", "ufpr.pdf", "dest.pdf"))
-        rmarkdown::pdf_document(
-                       template = template,
-                       toc = toc,
-                       toc_depth = toc_depth,
-                       number_sections = number_sections,
-                       fig_width = fig_width,
-                       fig_height = fig_height,
-                       fig_crop = fig_crop,
-                       fig_caption = fig_caption,
-                       dev = dev,
-                       df_print = df_print,
-                       highlight = highlight,
-                       keep_tex = keep_tex,
-                       keep_md = keep_md,
-                       latex_engine = latex_engine,
-                       citation_package = citation_package,
-                       includes = includes,
-                       md_extensions = md_extensions,
-                       output_extensions = output_extensions,
-                       pandoc_args = pandoc_args,
-                       extra_dependencies = extra_dependencies)
+        bookdown::pdf_document2(
+                      template = template,
+                      toc = toc,
+                      toc_depth = toc_depth,
+                      number_sections = number_sections,
+                      fig_width = fig_width,
+                      fig_height = fig_height,
+                      fig_crop = fig_crop,
+                      fig_caption = fig_caption,
+                      dev = dev,
+                      df_print = df_print,
+                      highlight = highlight,
+                      keep_tex = keep_tex,
+                      keep_md = keep_md,
+                      latex_engine = latex_engine,
+                      citation_package = citation_package,
+                      includes = includes,
+                      md_extensions = md_extensions,
+                      output_extensions = output_extensions,
+                      pandoc_args = pandoc_args,
+                      extra_dependencies = extra_dependencies)
 }
