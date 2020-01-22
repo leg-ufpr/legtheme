@@ -1,0 +1,99 @@
+\documentclass[a4paper,$if(font-size)$$font-size$$endif$]{article}
+
+\usepackage[brazilian]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath,amsfonts,amssymb,amsthm}
+\usepackage[margin=2.5cm]{geometry}
+\usepackage{indentfirst}
+\usepackage{graphicx}
+%\usepackage{subfigure}
+\usepackage{url}
+\usepackage{supertabular}
+\usepackage{lscape}
+\usepackage{setspace} % espaçamento 1,5
+\usepackage[font={small}]{caption}
+\usepackage{hyperref}
+
+% Defines cslreferences environment
+% Required by pandoc 2.8
+% Copied from https://github.com/rstudio/rmarkdown/issues/1649
+$if(csl-refs)$
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newenvironment{cslreferences}%
+  {$if(csl-hanging-indent)$\setlength{\parindent}{0pt}%
+  \everypar{\setlength{\hangindent}{\cslhangindent}}\ignorespaces$endif$}%
+  {\par}
+$endif$
+
+\usepackage{titlesec}
+\titleformat*{\section}{\Large\bfseries\sffamily}
+\titleformat*{\subsection}{\large\bfseries\sffamily}
+\titleformat*{\subsubsection}{\bfseries\sffamily}
+
+%% Fontes
+\usepackage[scaled]{helvet}
+% \usepackage{times,mathptmx}
+\usepackage[sc]{mathpazo}
+\usepackage{inconsolata}
+
+%% Necessario para incluir o ambiente/pacote Shaded para blocos de
+%% codigo
+$if(highlighting-macros)$
+$highlighting-macros$
+$endif$
+
+\begin{document}
+%\maketitle
+% a inclusão desse comando depende do que foi especificado acima
+% \thispagestyle{fancy}
+
+\singlespacing
+
+\pagestyle{empty}
+
+\begin{center}
+
+\large
+\textbf{$if(university)$$university$$endif$}\\
+\textbf{$if(sector)$$sector$$endif$}\\
+\textbf{$if(department)$$department$$endif$}
+
+\vspace{4cm}
+%\large
+$if(author)$
+$author$
+$endif$
+
+\vspace{5cm}
+\Large
+\textbf{$if(title)$$title$$endif$}
+
+\vspace{\stretch{1}}
+\large
+$if(city)$$city$$endif$\\
+$if(year)$$year$$endif$
+
+\end{center}
+
+\pagebreak
+
+\clearpage\mbox{}\clearpage
+
+\normalsize
+\onehalfspacing
+
+$if(toc)$
+\pagebreak
+\tableofcontents
+$endif$
+
+\pagebreak
+
+\pagestyle{plain} % headings (igual a book)
+\pagenumbering{arabic}
+
+$body$
+
+\end{document}

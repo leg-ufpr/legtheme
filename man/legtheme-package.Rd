@@ -7,7 +7,7 @@
 \title{legtheme: Rmarkdown Theme for LEG documents}
 \description{
 A set of custom Rmarkdown templates for documents and
-presentations with the LEG color scheme and identity standards.
+   presentations with the LEG color scheme and identity standards.
 }
 \details{
 Trial run on RMarkdown templates
@@ -15,8 +15,8 @@ Trial run on RMarkdown templates
 \seealso{
 Useful links:
 \itemize{
-  \item \url{https://github.com/leg-ufpr/leg-themes}
-  \item Report bugs at \url{https://github.com/leg-ufpr/leg-themes/issues}
+  \item \url{https://github.com/leg-ufpr/legtheme}
+  \item Report bugs at \url{https://github.com/leg-ufpr/legtheme/issues}
 }
 
 }

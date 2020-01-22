@@ -26,12 +26,29 @@ load_resources_if_missing <- function(template_name, resources) {
     if(!dir.exists("logo")){
         dir.create("logo")
     }
-    for(template_file in resources)
+    pdfs <- grep("*.pdf", resources, value = TRUE)
+    others <- setdiff(resources, pdfs)
+    for(template_file in pdfs)
         if(!file.exists(paste0("logo/", template_file))){
             file.copy(system.file("rmarkdown", "templates",
                                   template_name,
                                   "skeleton",
+                                  "logo",
                                   template_file,
                                   package = "legtheme"), "logo/")
         }
+    if(length(others != 0)) {
+        if(!dir.exists("bib")){
+            dir.create("bib")
+        }
+        for(template_file in others)
+            if(!file.exists(paste0("bib/", template_file))){
+                file.copy(system.file("rmarkdown", "templates",
+                                      template_name,
+                                      "skeleton",
+                                      "bib",
+                                      template_file,
+                                      package = "legtheme"), "bib/")
+            }
+    }
 }
