@@ -45,7 +45,7 @@ proj_generico <-
         template <- find_resource("proj_generico", "template.tex")
         load_resources_if_missing("proj_generico",
                                   c("leg.pdf", "ufpr.pdf", "dest.pdf",
-                                    "abntex2.csl"))
+                                    "abntex2.csl", "ref.bib"))
         bookdown::pdf_document2(
                       template = template,
                       toc = toc,
