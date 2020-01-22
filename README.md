@@ -6,21 +6,62 @@
 
 LEG template for documents.
 
-## Introduction
+## Usage
 
-Some description.
+After installing (sse below), you can create a draft document from one
+of the themes available:
+
+- `beamer_leg` is a theme for beamer slides
+- `proj_generico` is a theme for a generic project or any other similar
+  document in PDF
+
+To create a draft for `beamer_leg` use:
+
+
+```r
+library(rmarkdown)
+draft(file = "slides.Rmd", template = "beamer_leg",
+      package = "legtheme", create_dir = FALSE, edit = FALSE)
+```
+This will create (in the current directory) a file named `slides.Rmd`
+which can be further rendered with
+
+
+```r
+render("proj.Rmd")
+```
+
+Similarly, to create a draft document for the `proj_generico` theme,
+just use:
+
+
+```r
+draft(file = "proj.Rmd", template = "proj_generico",
+      package = "legtheme", create_dir = FALSE, edit = FALSE)
+```
 
 ## Download and install
 
+The easiest way to install is directly from this repository with the
+**remotes** (or **devtools**) packages
+
+
+```r
+remotes::install_github("leg-ufpr/legtheme")
+```
+
+In any case, there are detailed instructions below for different
+plataforms.
+
 ### Linux/Mac
 
-Use the `devtools` package (available from
-[CRAN](http://cran-r.c3sl.ufpr.br/web/packages/devtools/index.html)) to
+Use the `remotes` package (available from
+[CRAN](http://cran-r.c3sl.ufpr.br/web/packages/remotes/index.html)) to
 install automatically from this GitHub repository:
 
 
 ```r
-library(devtools)
+library(remotes)
 install_github("leg-ufpr/legtheme")
 ```
 
