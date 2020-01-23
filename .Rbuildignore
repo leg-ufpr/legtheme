@@ -3,6 +3,7 @@ README.md
 Rplots.pdf
 .gitignore
 .Rprofile
+.Rhistory
 ^\.travis\.yml$
 ^\.gitlab-ci\.yml$
 ^\.git$
