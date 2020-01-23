@@ -15,6 +15,15 @@
 \usepackage[font={small}]{caption}
 \usepackage{hyperref}
 
+$if(hidelinks)$
+\hypersetup{
+  colorlinks = true, % Colours links instead of ugly boxes
+  urlcolor = blue, % Colour for external hyperlinks
+  linkcolor = black, % Colour of internal links
+  citecolor = black  % Colour of citations
+}
+$endif$
+
 % Defines cslreferences environment
 % Required by pandoc 2.8
 % Copied from https://github.com/rstudio/rmarkdown/issues/1649
@@ -86,10 +95,15 @@ $if(year)$$year$$endif$
 
 $if(toc)$
 \pagebreak
+\pagestyle{plain}
+\pagenumbering{roman}
 \tableofcontents
 $endif$
 
 \pagebreak
+\pagestyle{empty}
+
+\clearpage\mbox{}\clearpage
 
 \pagestyle{plain} % headings (igual a book)
 \pagenumbering{arabic}
