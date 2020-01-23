@@ -7,6 +7,7 @@ author: Fernando de Pol Mayer
 city: Curitiba
 year: 2020
 font-size: 11pt
+hidelinks: TRUE # esconde as caixas ao redor dos links
 bibliography: bib/ref.bib
 csl: bib/abntex2.csl
 output: legtheme::proj_generico
@@ -38,7 +39,7 @@ regras definidas no arquivo `abntex2.csl` (*citation style language*).
 Variações nas citações também são permitidas, por exemplo [ver
 @Wilks1962, pp. 199; @Mood1974, pp. 229].
 
-# Métodologia
+# Metodologia
 
 ## Dados
 
@@ -65,7 +66,7 @@ knitr::kable(da, caption =
                      "Uma legenda para essa tabela com \\textbf{kable}.")
 ```
 
-Esse é mais umn texto só para empurrar a próxima sessão para baixo.
+Esse é mais um texto só para empurrar a próxima sessão para baixo.
 Aproveito para citar mais um artigo de @Bonat2018, e outro no final do
 parágrafo [@OHara2009].
 
@@ -107,12 +108,23 @@ plot(Petal.Length ~ Petal.Width, data = iris)
 ```
 
 Uma figura externa também pode ser incluída. Nesse caso, a melhor opção
-é usat a função `include_graphics()` do **knitr**, e controlar a
+é usar a função `include_graphics()` do **knitr**, e controlar a
 aparência com as opções do chunk. Veja um exemplo na Figura
 \@ref(fig:leg).
 
 ```{r leg, fig.cap="O logo do LEG.", out.width="50%"}
 knitr::include_graphics("logo/leg.pdf")
+```
+
+Também é possível incluir códigos, se for necessário. Veja no próximo
+parágrafo como isso funciona.
+
+Uma descrição da base de dados `iris` pode ser obtida com a função
+`str()`, que descreve todas as variáveis presentes em um objeto da
+classe `data.frame`. Veja o resultado da chamada dessa função abaixo.
+
+```{r, echo=TRUE}
+str(iris)
 ```
 
 # Referências
