@@ -28,7 +28,7 @@ which can be further rendered with
 
 
 ```r
-render("proj.Rmd")
+render("slides.Rmd")
 ```
 
 Similarly, to create a draft document for the `proj_generico` theme,
@@ -38,6 +38,7 @@ just use:
 ```r
 draft(file = "proj.Rmd", template = "proj_generico",
       package = "legtheme", create_dir = FALSE, edit = FALSE)
+render("proj.Rmd")
 ```
 
 ## Download and install

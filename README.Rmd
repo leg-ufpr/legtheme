@@ -34,7 +34,7 @@ This will create (in the current directory) a file named `slides.Rmd`
 which can be further rendered with
 
 ```{r, eval=FALSE}
-render("proj.Rmd")
+render("slides.Rmd")
 ```
 
 Similarly, to create a draft document for the `proj_generico` theme,
@@ -43,6 +43,7 @@ just use:
 ```{r, eval=FALSE}
 draft(file = "proj.Rmd", template = "proj_generico",
       package = "legtheme", create_dir = FALSE, edit = FALSE)
+render("proj.Rmd")
 ```
 
 ## Download and install
