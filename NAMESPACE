@@ -2,5 +2,5 @@
 
 export(beamer_leg)
 export(proj_generico)
-import(bookdown)
+importFrom(bookdown,pdf_document2)
 importFrom(rmarkdown,beamer_presentation)
