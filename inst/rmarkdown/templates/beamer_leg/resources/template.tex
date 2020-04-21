@@ -205,9 +205,13 @@ $if(section-titles)$
     \let\sectionname\relax
     \begin{frame}
       \frametitle{Sumário}
-      % \begin{multicols}{2}
+      $if(usemulticols)$
+      \begin{multicols}{2}
       \tableofcontents[currentsection]
-      % \end{multicols}
+      \end{multicols}
+      $else$
+      \tableofcontents[currentsection]
+      $endif$
     \end{frame}
   \fi
 }
