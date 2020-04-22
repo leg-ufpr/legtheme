@@ -1,6 +1,6 @@
 
 
-# legtheme 0.2.1
+# legtheme 0.2.2
 
 [![Build Status](https://travis-ci.org/leg-ufpr/legtheme.svg?branch=master)](https://travis-ci.org/leg-ufpr/legtheme)
 
@@ -66,20 +66,20 @@ library(remotes)
 install_github("leg-ufpr/legtheme")
 ```
 
-Alternatively, download the package tarball: [legtheme_0.2.1.tar.gz][]
+Alternatively, download the package tarball: [legtheme_0.2.2.tar.gz][]
 and run from a UNIX terminal (make sure you are on the container file
 directory):
 
 
 ```
-R CMD INSTALL -l /path/to/your/R/library legtheme_0.2.1.tar.gz
+R CMD INSTALL -l /path/to/your/R/library legtheme_0.2.2.tar.gz
 ```
 
 Or, inside an `R` session:
 
 
 ```
-install.packages("legtheme_0.2.1.tar.gz", repos = NULL,
+install.packages("legtheme_0.2.2.tar.gz", repos = NULL,
                  lib.loc = "/path/to/your/R/library",
                  dependencies = TRUE)
 ```
@@ -91,13 +91,13 @@ library.
 
 ### Windows
 
-Download Windows binary version: [legtheme_0.2.1.zip][] (**do not unzip
+Download Windows binary version: [legtheme_0.2.2.zip][] (**do not unzip
 it under Windows**), put the file in your working directory, and from
 inside `R`:
 
 
 ```
-install.packages("legtheme_0.2.1.zip", repos = NULL,
+install.packages("legtheme_0.2.2.zip", repos = NULL,
                  dependencies = TRUE)
 ```
 
@@ -120,7 +120,7 @@ MIT. See [LICENSE](./LICENSE)
 
 
 
-[legtheme_0.2.1.tar.gz]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.2.1.tar.gz
-[legtheme_0.2.1.zip]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.2.1.zip
+[legtheme_0.2.2.tar.gz]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.2.2.tar.gz
+[legtheme_0.2.2.zip]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme_0.2.2.zip
 [legtheme-manual.pdf]: https://github.com/leg-ufpr/legtheme/raw/master/downloads/legtheme-manual.pdf
 [Fernando de Pol Mayer]: http://www.leg.ufpr.br/~fernandomayer

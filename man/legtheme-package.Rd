@@ -28,4 +28,9 @@ Authors:
   \item James Balamuta
 }
 
+Other contributors:
+\itemize{
+  \item Vinicius Riffel \email{viniciusriffel@ufpr.br} [contributor]
+}
+
 }
