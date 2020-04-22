@@ -4,6 +4,7 @@ Title: Rmarkdown Theme for LEG documents
 Version: 0.2.1
 Authors@R: c(
   person("Fernando", "Mayer", email = "fernando.mayer@ufpr.br", role = c("aut", "cre")),
+  person("Vinicius", "Riffel", email = "viniciusriffel@ufpr.br", role = c("ctb")),
   person("James", "Balamuta", role = c("aut"))
   )
 Description: A set of custom Rmarkdown templates for documents and
