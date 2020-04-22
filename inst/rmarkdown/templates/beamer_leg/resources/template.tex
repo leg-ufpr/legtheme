@@ -54,9 +54,6 @@ $endif$
 \usepackage{multicol}
 \usepackage{multirow}
 \usepackage{hyperref}
-\usepackage{changepage}
-\usepackage{bm}
-\usepackage{animate}
 
 $if(tikz)$
 \usepackage{tikz}
@@ -71,11 +68,10 @@ $endfor$
 $endif$
 $endif$
 
-\usetheme{CambridgeUS}
-\usecolortheme{dove}
+\usetheme{AnnArbor}
+\usecolortheme{wolverine}
 
 %redefined colors for beamer
-% \definecolor{beamer@UIUCblue}{RGB}{29,38,57}
 \definecolor{beamer@UIUCblue}{RGB}{29,38,57}
 % \definecolor{beamer@UIUCorange}{RGB}{215,85,54}
 \definecolor{beamer@UIUCorange}{RGB}{230,120,23}
@@ -85,33 +81,21 @@ $endif$
 \definecolor{beamer@UIUCgray}{RGB}{210,210,210}
 \definecolor{beamer@UIUCgray2}{RGB}{244,244,244}
 
-% \setbeamercolor{frametitle}{fg=beamer@UIUCblue,bg=beamer@UIUCgray2}
-\setbeamercolor{frametitle}{fg=black,bg=white}
+\setbeamercolor{frametitle}{fg=beamer@UIUCblue,bg=beamer@UIUCgray}
 \setbeamercolor{normal text}{fg=black}
-% \setbeamercolor{title}{fg=beamer@UIUCblue,bg=beamer@UIUCgray2}
-\setbeamercolor{title}{fg=black,bg=white}
-\setbeamercolor{item projected}{fg=black,bg=beamer@UIUCgray2}
+\setbeamercolor{title}{fg=beamer@UIUCblue,bg=beamer@UIUCorange}
 \setbeamercolor{item projected}{fg=white,bg=beamer@UIUCorange}
-
-\setbeamercolor{itemize item}{fg=beamer@UIUCorange}
-\setbeamercolor{itemize subitem}{fg=beamer@UIUCorange}
-\setbeamercolor{enumerate item}{fg=beamer@UIUCorange}
-\setbeamercolor{enumerate subitem}{fg=beamer@UIUCorange}
 
 % Boxes
 \setbeamercolor{block title}{fg=beamer@UIUCblue,bg=beamer@UIUCorange}
 \setbeamercolor{block body}{fg=blue,bg=beamer@UIUCblue!80}
-% \setbeamercolor{title in head/foot}{fg=beamer@UIUCblue,bg=beamer@UIUCgray}
-\setbeamercolor{title in head/foot}{fg=white,bg=white}
-% \setbeamercolor{author in head/foot}{fg=white,bg=beamer@UIUCblue}
-\setbeamercolor{author in head/foot}{fg=white,bg=white}
+\setbeamercolor{title in head/foot}{fg=beamer@UIUCblue,bg=beamer@UIUCgray}
+\setbeamercolor{author in head/foot}{fg=white,bg=beamer@UIUCblue}
 \setbeamercolor{institute in head/foot}{fg=white,bg=beamer@UIUCorange}
-% \setbeamercolor{date in head/foot}{fg=white,bg=beamer@UIUCorange}
-\setbeamercolor{date in head/foot}{fg=black,bg=white}
-% \setbeamercolor{section in head/foot}{fg=white,bg=beamer@UIUCblue}
-\setbeamercolor{section in head/foot}{fg=white,bg=white}
-% \setbeamercolor{subsection in head/foot}{fg=white,bg=beamer@UIUCorange}
-\setbeamercolor{subsection in head/foot}{fg=white,bg=white}
+\setbeamercolor{date in head/foot}{fg=white,bg=beamer@UIUCorange}
+\setbeamercolor{section in head/foot}{fg=white,bg=beamer@UIUCblue}
+\setbeamercolor{subsection in head/foot}{fg=white,bg=beamer@UIUCorange}
+
 
 \hypersetup{colorlinks=true,urlcolor=beamer@UIUCblue,linkcolor=beamer@UIUCblue,% link color controls section, subsection, and title
 citecolor = beamer@UIUCorange,
@@ -135,7 +119,7 @@ $if(fonttheme)$
 \usefonttheme{$fonttheme$}
 $endif$
 $if(mainfont)$
-\usefonttheme{structuresmallcapsserif} % use mainfont rather than sansfont for slide text
+\usefonttheme{serif} % use mainfont rather than sansfont for slide text
 $endif$
 $if(innertheme)$
 \useinnertheme{$innertheme$}
@@ -221,7 +205,7 @@ $if(section-titles)$
     \let\sectionname\relax
     \begin{frame}
       \frametitle{Sumário}
-      $if(toc-multicols)$
+      $if(usemulticols)$
       \begin{multicols}{2}
       \tableofcontents[currentsection]
       \end{multicols}
@@ -273,6 +257,7 @@ $for(header-includes)$
 $header-includes$
 $endfor$
 
+
 $if(subtitle)$
 \subtitle{$subtitle$}
 $endif$
@@ -318,19 +303,10 @@ $endif$
 }
 
 % Include logos
-\titlegraphic{
-  \includegraphics[width=.175\textwidth]{logo/leg.pdf}
-  \hspace{.5\textwidth}
-  \includegraphics[width=.25\textwidth]{logo/ufpr.pdf}
-  % \includegraphics[width=.175\textwidth]{logo/leg.pdf}
-  % \hspace{.125\textwidth}
-  % \includegraphics[width=.25\textwidth]{logo/ufpr.pdf}
-  % \hspace{.125\textwidth}
-  % \includegraphics[width=.25\textwidth]{logo/cidamo.png}
+\titlegraphic{\includegraphics[width=1.5cm,height=1.5cm]{logo/leg.pdf}\hfill
+  \includegraphics[width=3cm,height=1.5cm]{logo/ufpr.pdf}\hfill
+  \includegraphics[width=1.5cm,height=1.5cm]{logo/dest.pdf}\hfill
 }
-
-\logo{\includegraphics[width=.1\textwidth]{logo/leg.pdf}}
-% \logo{\includegraphics[width=.15\textwidth]{logo/cidamo.png}}
 
 % Option to fake out the raw_tex plugin and, thus, enabling the embedding of
 % markdown within a column scheme.
@@ -371,8 +347,7 @@ $endif$
 \mode*
 
 $if(title)$
-% plain is to remove the \logo from the title page
-\frame[plain]{\titlepage}
+\frame{\titlepage}
 $endif$
 
 $for(include-before)$
